@@ -5,8 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MEAN Messages</title>
-</head>
-<body>
+    <script src="vendors/angular.js"></script>
+    <script src="vendors/angular-route.js"></script>
+    <script src="scripts/client.js"></script>
+
+    <!-- CONTROLLERS -->
+    <script src="scripts/controllers/message.controller.js"></script>
+
+    <!-- SERVICES -->
+    <script src="scripts/services/message.service.js"></script>
     
+</head>
+<body ng-app="MessageApp">
+    <h1>MEAN Messages</h1>
+    <ng-view></ng-view>
 </body>
 </html>
