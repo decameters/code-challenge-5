@@ -1,2 +1,9 @@
-<h2>in home.html</h2>
-{{vm.message}}
+<form ng-submit="vm.sendMessage(vm.newMessage)">
+    <input type="text" placeholder="name" ng-model="vm.newMessage.username">
+    <input type="text" placeholder="your message" ng-model="vm.newMessage.message">
+    <input type="submit">
+</form>
+
+<p ng-repeat="message in vm.message.list">
+    {{message.username}}: {{message.message}}
+</p>
